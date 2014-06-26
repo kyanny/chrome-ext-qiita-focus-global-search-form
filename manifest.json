@@ -2,10 +2,20 @@
   "name": "Focus Global Search Form for Qiita",
   "version": "0.0.1",
   "manifest_version": 2,
-  "permissions": ["https://qiita.com/", "https://*.qiita.com/"],
+  "permissions": [
+    "http://qiita.com/",
+    "https://qiita.com/",
+    "http://*.qiita.com/",
+    "https://*.qiita.com/"
+  ],
   "content_scripts": [
     {
-      "matches": ["https://qiita.com/*", "https://*.qiita.com/*"],
+      "matches": [
+        "http://qiita.com/",
+        "https://qiita.com/",
+        "http://*.qiita.com/",
+        "https://*.qiita.com/"
+      ],
       "js": ["app.js"]
     }
   ]
